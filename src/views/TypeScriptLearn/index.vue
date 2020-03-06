@@ -10,15 +10,19 @@
 </template>
 
 <script lang="ts">
-import { Component, Mixins } from 'vue-property-decorator'
-import myMixin from '@/utils/mixin'
+  import {Component, Mixins} from 'vue-property-decorator'
+  import myMixin from '@/utils/mixin'
+  import TSLDto from './TSLDto'
 
   @Component
-export default class TypeScriptLearn extends Mixins(myMixin) {
-  created (): void {
-    console.log('typeScriptLearn组件里的created')
+  export default class TypeScriptLearn extends Mixins(myMixin) {
+    tSLDto = new TSLDto()
+
+    created(): void {
+      console.log('typeScriptLearn组件里的created')
+    }
+
   }
-}
 </script>
 
 <style scoped lang="scss">
