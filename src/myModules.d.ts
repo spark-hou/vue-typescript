@@ -5,5 +5,5 @@
  * @Description:
  */
 declare module 'SomeModule' {
-  export function fn(): string;
+   function fn(): string;
 }
